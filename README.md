@@ -15,6 +15,7 @@ https://sellanycar-admin-api.herokuapp.com/
 
   - Node js
   - Express
+  - MongoDB
   
 # Setup
 
