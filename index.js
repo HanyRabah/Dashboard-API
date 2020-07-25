@@ -14,6 +14,10 @@ async function runServer() {
   server.use('/api/v1', require('./routes/tractors'));
   server.use('/api/v1', require('./routes/process'));
 
+  server.get('', (req, res) => {
+    res.status(200).send('<h1>Api Server Ready! Shoot to get data. (:</h1>');
+  });
+
   server.listen(PORT, (err) => {
     if(err) { console.error(err);}
     console.log('Server ready on port:', PORT);
