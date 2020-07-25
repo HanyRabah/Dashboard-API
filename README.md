@@ -1,17 +1,42 @@
 # Table of contents
 * [General info](#general-info)
-* [Development decisions](#development-decisions)
-* [Folder Structure](#folder-structure)
 * [Demo](#demo)
 * [Used Stack](#used-stack)
-* [Task Requirements](#task-requirements)
 * [Setup](#setup)
-* [Future Enhancement](#future-enhancement)
-
 
 # General Info 
 
-A node server API
+A node server API for Admin Dasboard
 
+# Demo
+https://sellanycar-admin-api.herokuapp.com/
 
-# Development decisions
+# Used Stack
+
+  - Node js
+  - Express
+  
+# Setup
+
+install dependencies:
+
+```sh
+npm install 
+```
+
+Run localy
+
+to run localy you need to create `.env` file first and add variables 
+```
+  DB_URI: <MongoDb_URI>,
+  AUTH_NAMESPACE: <Auth0_Namespace>,
+  JWKSURI: <Auth0_Jwks>,
+  JWT_AUDIENCE: <Auth0_Audience>,
+  JWT_ISSUER: <Auth0_ISSUER>,
+```
+
+```sh
+npm run dev 
+```
+
+Thanks.
